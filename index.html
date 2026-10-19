@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Carousel | CCT360</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <span class="wordmark"><span class="small-star">✳</span> PHOTO CAROUSEL</span>
+      <span class="project-tag">CCT360 / PHOTO CAROUSEL</span>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="main-title">
+        <p class="eyebrow"><span class="eyebrow-line"></span> A VISUAL STORY IN THREE FRAMES</p>
+        <h1 id="main-title">PHOTO <em>CAROUSEL.</em></h1>
+      </section>
+
+      <section class="story" aria-labelledby="story-title">
+        <div class="story-heading">
+          <div>
+            <p class="section-label">01 / CHOOSE YOUR PERSPECTIVE</p>
+            <div class="story-switch" role="group" aria-label="Choose a story">
+              <button type="button" id="success-btn" class="story-button active" aria-pressed="true">01 &nbsp; Hard Work Pays Off</button>
+              <button type="button" id="pressure-btn" class="story-button" aria-pressed="false">02 &nbsp; The Pressure to Succeed</button>
+            </div>
+          </div>
+          <p class="switch-hint">SELECT A STORY TO REARRANGE THE MOMENTS <span aria-hidden="true">↙</span></p>
+        </div>
+
+        <div class="story-summary" aria-live="polite">
+          <div class="summary-text">
+            <p class="eyebrow" id="story-kicker">STORY 01 — PERSEVERANCE</p>
+            <h2 id="story-title">Hard Work Pays Off</h2>
+            <p id="story-description">A student studies for an exam, pushes through exhaustion, and finally celebrates the results of their hard work.</p>
+          </div>
+          <span class="story-counter" id="story-counter">01 / 02</span>
+        </div>
+
+        <div class="frames" id="frames" aria-label="Three-frame photo story">
+          <article class="frame">
+            <div class="photo-wrap"><img id="photo-0" src="images/studying.jpg" alt="Student writing notes in a notebook"></div>
+            <div class="frame-metadata"><span class="frame-number">FRAME 01 / BEGINNING</span><h3 id="frame-title-0">The Effort</h3><p id="frame-caption-0">It starts with the determination to do well.</p></div>
+          </article>
+          <article class="frame">
+            <div class="photo-wrap"><img id="photo-1" src="images/exhausted.jpg" alt="Student resting their head on a notebook"></div>
+            <div class="frame-metadata"><span class="frame-number">FRAME 02 / MIDDLE</span><h3 id="frame-title-1">The Struggle</h3><p id="frame-caption-1">Hours of studying begin to take a toll.</p></div>
+          </article>
+          <article class="frame">
+            <div class="photo-wrap"><img id="photo-2" src="images/celebrating.jpg" alt="Student smiling with a celebratory fist raised"></div>
+            <div class="frame-metadata"><span class="frame-number">FRAME 03 / END</span><h3 id="frame-title-2">The Reward</h3><p id="frame-caption-2">At last, the hard work feels worth it.</p></div>
+          </article>
+        </div>
+
+        <div class="takeaway"><span class="takeaway-label">MORAL OF THE STORY</span><p id="story-message">Hard work and perseverance can lead to success.</p></div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
